@@ -6,6 +6,7 @@ import java.util.Random;
 
 public class GuessTheNumberGame {
     private final JTextField inputField;
+    private JButton guessButton;
     private JLabel resultLabel;
     private JLabel messageLabel;
     private int numberToGuess;
@@ -24,7 +25,7 @@ public class GuessTheNumberGame {
 
         JLabel promptLabel = new JLabel("Введите ваше число:");
         inputField = new JTextField(10);
-        JButton guessButton = new JButton("Угадать");
+        guessButton = new JButton("Угадать");
         resultLabel = new JLabel("Попробуйте угадать число!");
         messageLabel = new JLabel();
 
